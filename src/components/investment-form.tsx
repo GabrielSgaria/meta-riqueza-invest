@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { useState, FormEvent } from 'react';
 
-// Definindo a tipagem da função onSubmit
 interface InvestmentFormProps {
   onSubmit: (investment: { category: string; amount: number }) => void;
 }
@@ -13,8 +12,7 @@ export function InvestmentForm({ onSubmit }: InvestmentFormProps) {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Adicionando a tipagem correta no post request
-    await axios.post('/api/', { category, amount });
+    await axios.post('/api/investments/', { category, amount });
     onSubmit({ category, amount });
   };
 

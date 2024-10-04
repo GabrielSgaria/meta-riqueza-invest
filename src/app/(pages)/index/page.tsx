@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import { InvestmentForm } from '../../../components/investmentForm'
+import { InvestmentForm } from '../../../components/investment-form'
 import { MetaProgress } from '../../../components/meta-progess'
 import { Dashboard } from '../../../components/dashboard'
 import AuthenticatedWrapper from '@/components/authenticated-wrapper'
